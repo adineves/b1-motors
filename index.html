@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - B1 Motors</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: "#e10600"
+          }
+        }
+      }
+    }
+  </script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+</head>
+
+<body class="bg-black text-white font-sans">
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+<!-- HEADER -->
+<header class="border-b border-zinc-800">
+  <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+    <img src="assets/images/logo/b1-logo.png" alt="B1 Motors" class="h-10 w-auto">
+    
+    <nav class="hidden md:flex space-x-8 text-sm uppercase tracking-wider">
+      <a href="#" class="hover:text-primary transition">Home</a>
+      <a href="sobre.html" class="hover:text-primary transition">Sobre</a>
+      <a href="estoque.html" class="hover:text-primary transition">Estoque</a>
+      <a href="contato.html" class="hover:text-primary transition">Contato</a>
+    </nav>
+
+    <!-- Mobile Button -->
+    <button id="menu-btn" class="md:hidden text-2xl">
+      ☰
+    </button>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 space-y-3 text-sm uppercase">
+    <a href="#" class="block hover:text-primary">Home</a>
+    <a href="sobre.html" class="block hover:text-primary">Sobre</a>
+    <a href="estoque.html" class="block hover:text-primary">Estoque</a>
+    <a href="contato.html" class="block hover:text-primary">Contato</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="relative h-[90vh] flex items-center justify-center text-center">
+  <img src="assets/images/backgrounds/index.png" 
+       class="absolute inset-0 w-full h-full object-cover opacity-40">
+  
+  <div class="relative z-10 px-6">
+    <h2 class="text-4xl md:text-6xl font-bold mb-6">
+      Performaance. Exclusividade. <span class="text-primary">Confiança.</span>
+    </h2>
+    <a href="estoque.html" class="bg-primary px-8 py-3 uppercase text-sm rounded-2xl tracking-wider hover:bg-red-800 transition">
+      Ver Estoque
+    </a>
+  </div>
+</section>
+
+<!-- SOBRE -->
+<section id="sobre" class="py-24 bg-zinc-950">
+  <div class="max-w-4xl mx-auto px-6 text-center">
+    <h3 class="text-3xl font-bold mb-8">Sobre a B1</h3>
+    <p class="text-zinc-300 leading-relaxed">
+      A B1 Motors nasceu com o propósito de oferecer veículos exclusivos
+      com curadoria especializada, atendimento personalizado e excelência
+      em cada detalhe da negociação.
+    </p>
+  </div>
+</section>
+
+<!-- ESTOQUE -->
+<section id="estoque" class="py-24">
+  <div class="max-w-7xl mx-auto px-6">
+    <h3 class="text-3xl font-bold text-center mb-16">Estoque</h3>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+      <!-- CARD -->
+      <div class="relative rounded-2xl overflow-hidden group cursor-pointer transition duration-500 hover:scale-[1.03]">
+
+      <!-- IMAGEM -->
+      <img src="https://images.unsplash.com/photo-1494905998402-395d579af36f"
+       class="w-full h-72 object-cover transition duration-700 group-hover:scale-110">
+
+      <!-- OVERLAY BLUR -->
+      <div class="absolute bottom-0 left-0 w-full bg-white/10 backdrop-blur-md px-2 py-1 text-white">
+
+      <!-- TÍTULO E PREÇO -->
+      <div class="flex justify-between items-center">
+        <h4 class="text-lg font-semibold">Ford Mustang GT</h4>
+        <span class="font-bold text-white group-hover:text-primary transition duration-300">
+          R$ 250.000
+        </span>
+      </div>
+
+      <!-- INFO EXTRA (aparece no hover) -->
+      <div class="overflow-hidden max-h-0 group-hover:max-h-40 transition-all duration-500 text-sm text-zinc-200 mt-3"> 
+        2013 • 25.000km • Automático
+      </div>
+    </div>
+  </div>
+
+  <!-- CARD -->
+      <div class="relative rounded-2xl overflow-hidden group cursor-pointer transition duration-500 hover:scale-[1.03]">
+
+      <!-- IMAGEM -->
+      <img src="https://images.unsplash.com/photo-1593353798398-6024b7444bb6?q=80&w=464&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+       class="w-full h-72 object-cover transition duration-700 group-hover:scale-110">
+
+      <!-- OVERLAY BLUR -->
+      <div class="absolute bottom-0 left-0 w-full bg-white/10 backdrop-blur-md px-2 py-1 text-white">
+
+      <!-- TÍTULO E PREÇO -->
+      <div class="flex justify-between items-center">
+        <h4 class="text-lg font-semibold">Porsche 911</h4>
+        <span class="font-bold text-white group-hover:text-primary transition duration-300">
+          R$ 850.000
+        </span>
+      </div>
+
+      <!-- INFO EXTRA (aparece no hover) -->
+      <div class="overflow-hidden max-h-0 group-hover:max-h-40 transition-all duration-500 text-sm text-zinc-200 mt-3"> 
+        2023 • 5.000km • Automático
+      </div>
+    </div>
+  </div>
+
+  <!-- CARD -->
+      <div class="relative rounded-2xl overflow-hidden group cursor-pointer transition duration-500 hover:scale-[1.03]">
+
+      <!-- IMAGEM -->
+      <img src="https://images.unsplash.com/photo-1612083544368-970eb9cf609d?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+       class="w-full h-72 object-cover transition duration-700 group-hover:scale-110">
+
+      <!-- OVERLAY BLUR -->
+      <div class="absolute bottom-0 left-0 w-full bg-white/10 backdrop-blur-md px-2 py-1 text-white">
+
+      <!-- TÍTULO E PREÇO -->
+      <div class="flex justify-between items-center">
+        <h4 class="text-lg font-semibold">BMW M4 - F82</h4>
+        <span class="font-bold text-white group-hover:text-primary transition duration-300">
+          R$ 450.000
+        </span>
+      </div>
+
+      <!-- INFO EXTRA (aparece no hover) -->
+      <div class="overflow-hidden max-h-0 group-hover:max-h-40 transition-all duration-500 text-sm text-zinc-200 mt-3"> 
+        2016 • 15.000km • Automático
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Endereço Mapa -->
+  <div>
+    <h2 class="text-4xl font-bold mb-8 text-center">Nossa Localização</h2>
+
+    <p class="text-gray-400  mb-6 text-center">
+      Rua Santos Dumont, 787
+      Ferraz de Vasconcelos - São Paulo
+      CEP: 08530-000
+    </p>
+  </div>
+
+  <div class="w-full h-80">
+    <iframe class="w-full h-full rounded" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.8213862057364!2d-46.369619824670465!3d-23.538925778815273!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce652dd6e5a435%3A0x4bd405e05c91fcb9!2sR.%20Santos%20Dumont%2C%20789%20-%20Vila%20Maria%20Rosa%2C%20Ferraz%20de%20Vasconcelos%20-%20SP%2C%2008530-000!5e0!3m2!1spt-BR!2sbr!4v1771858312591!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+<!-- CONTATO -->
+<section id="contato" class="py-24 bg-zinc-950">
+  <div class="max-w-xl mx-auto px-6 text-center">
+    <h3 class="text-3xl font-bold mb-10">Fale Conosco</h3>
+
+    <form class="space-y-5">
+      <input type="text" placeholder="Nome" class="w-full p-3 bg-black rounded-2xl border border-zinc-700 focus:border-primary outline-none">
+      <input type="email" placeholder="Email" class="w-full p-3 bg-black rounded-2xl border border-zinc-700 focus:border-primary outline-none">
+      <textarea rows="5" placeholder="Mensagem" class="w-full p-3 bg-black rounded-2xl border border-zinc-700 focus:border-primary outline-none"></textarea>
+
+      <button class="w-full bg-primary py-3 rounded-2xl uppercase text-sm tracking-wider hover:bg-red-800 transition">
+        Enviar
+      </button>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-black border-t border-zinc-800 py-10 text-center text-zinc-500 text-sm">
+  © 2026 B1 Motors - Todos os direitos reservados | Desenvolvido por <a href="http://www.instagram.com/adi.neves/">Adler Neves</a>
+</footer>
+
+ <!-- SCRIPTS -->
+  <script src="assets/js/cards.js"></script>
+  <script src="assets/js/carro.js"></script>
+  <script src="assets/js/main.js"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const btn = document.getElementById('menu-btn');
+      const menu = document.getElementById('mobile-menu');
+
+      if (btn) {
+        btn.addEventListener('click', () => {
+          menu.classList.toggle('hidden');
+        });
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estoque - B1 Motors</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+    }
+  </style>
+</head>
+
+<body class="bg-black text-white">
+
+<!-- HEADER -->
+<header class="border-b border-zinc-800">
+  <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+    <img src="assets/images/logo/b1-logo.png" alt="B1 Motors" class="h-10 w-auto">
+    
+    <nav class="hidden md:flex space-x-8 text-sm uppercase tracking-wider">
+      <a href="index.html" class="hover:text-red-600 transition">Home</a>
+      <a href="sobre.html" class="hover:text-red-600 transition">Sobre</a>
+      <a href="estoque.html" class="hover:text-red-600 transition">Estoque</a>
+      <a href="contato.html" class="hover:text-red-600 transition">Contato</a>
+    </nav>
+  </div>
+</header>
+
+<!-- TÍTULO -->
+<section class="py-16 text-center">
+  <h1 class="text-4xl font-bold mb-4">Nosso Estoque</h1>
+  <p class="text-zinc-400">Confira todos os veículos disponíveis</p>
+</section>
+
+<!-- GRID -->
+<section class="pb-20">
+  <div class="max-w-7xl mx-auto px-6">
+    <div id="estoque-container" class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+    </div>
+  </div>
+</section>
+
+<footer class="bg-zinc-900 py-8 text-center text-zinc-500 text-sm">
+  © 2026 B1 Motors - Todos os direitos reservados.
+</footer>
+
+<!-- SCRIPTS -->
+<script src="assets/js/carros.js"></script>
+<script src="assets/js/cards.js"></script>
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>

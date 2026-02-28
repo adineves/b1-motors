@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>B1 Motors</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: "#e10600"
+          }
+        }
+      }
+    }
+  </script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+</head>
+<body class="bg-black text-white">
+
+  <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - B1 Motors</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: "#e10600"
+          }
+        }
+      }
+    }
+  </script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+</head>
+
+<body class="bg-black text-white font-sans">
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+<!-- HEADER -->
+<header class="border-b border-zinc-800">
+  <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+    <img src="assets/images/logo/b1-logo.png" alt="B1 Motors" class="h-10 w-auto">
+    
+    <nav class="hidden md:flex space-x-8 text-sm uppercase tracking-wider">
+      <a href="#" class="hover:text-primary transition">Home</a>
+      <a href="sobre.html" class="hover:text-primary transition">Sobre</a>
+      <a href="estoque.html" class="hover:text-primary transition">Estoque</a>
+      <a href="contato.html" class="hover:text-primary transition">Contato</a>
+    </nav>
+
+    <!-- Mobile Button -->
+    <button id="menu-btn" class="md:hidden text-2xl">
+      ☰
+    </button>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 space-y-3 text-sm uppercase">
+    <a href="#" class="block hover:text-primary">Home</a>
+    <a href="sobre.html" class="block hover:text-primary">Sobre</a>
+    <a href="estoque.html" class="block hover:text-primary">Estoque</a>
+    <a href="contato.html" class="block hover:text-primary">Contato</a>
+  </div>
+</header>
+
+  <div id="carro-detalhe"></div>
+
+  <script src="assets/js/carros.js"></script>
+  <script src="assets/js/detalhe.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato - B1 Motors</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: "#e10600"
+          }
+        }
+      }
+    }
+  </script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+</head>
+
+<body class="bg-black text-white font-sans">
+
+<!-- HEADER -->
+<header class="border-b border-zinc-800">
+  <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+    <img src="assets/images/logo/b1-logo.png" alt="B1 Motors" class="h-10 w-auto">
+
+    <nav class="hidden md:flex space-x-8 text-sm uppercase tracking-wider">
+      <a href="index.html" class="hover:text-primary transition">Home</a>
+      <a href="sobre.html" class="hover:text-primary transition">Sobre</a>
+      <a href="estoque.html" class="hover:text-primary transition">Estoque</a>
+      <a href="contato.html" class="text-primary">Contato</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="relative h-[45vh] flex items-center justify-center text-center overflow-hidden">
+
+  <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70"
+       class="absolute inset-0 w-full h-full object-cover opacity-40">
+
+  <div class="absolute inset-0 bg-black/70"></div>
+
+  <div class="relative z-10">
+    <h1 class="text-4xl md:text-6xl font-bold tracking-tight">
+      Entre em <span class="text-primary">Contato</span>
+    </h1>
+  </div>
+
+</section>
+
+<!-- CONTEÚDO -->
+<section class="py-20 bg-zinc-950">
+  <div class="max-w-6xl mx-auto px-6">
+
+    <div class="grid md:grid-cols-2 gap-16">
+
+      <!-- FORM -->
+      <div>
+        <h2 class="text-3xl font-bold mb-8">
+          Fale Conosco
+        </h2>
+
+        <form class="space-y-6">
+
+          <input type="text" placeholder="Nome" class="w-full bg-black rounded-2xl border border-zinc-700 px-4 py-3 focus:outline-none focus:border-primary transition">
+
+          <input type="email" placeholder="E-mail" class="w-full bg-black rounded-2xl border border-zinc-700 px-4 py-3 focus:outline-none focus:border-primary transition">
+
+          <input type="tel" placeholder="Telefone" class="w-full bg-black rounded-2xl border border-zinc-700 px-4 py-3 focus:outline-none focus:border-primary transition">
+
+          <textarea rows="5" placeholder="Mensagem" class="w-full bg-black rounded-2xl border border-zinc-700 px-4 py-3 focus:outline-none focus:border-primary transition"></textarea>
+
+          <div class="flex items-start space-x-3 text-sm text-zinc-400">
+            <input type="checkbox" class="mt-1 accent-red-600">
+            <span>Li e aceito a política de privacidade.</span>
+          </div>
+
+          <button type="submit"
+            class="w-full bg-primary rounded-2xl hover:bg-red-700 transition py-3 uppercase tracking-wider text-sm font-semibold">
+            Enviar Mensagem
+          </button>
+
+        </form>
+      </div>
+
+      <!-- INFO -->
+      <div class="space-y-10">
+
+        <div>
+          <h3 class="text-xl font-semibold mb-4 text-primary">
+            Showroom São Paulo
+          </h3>
+
+          <p class="text-zinc-400 leading-relaxed">
+            Av. Exemplo, 123<br>
+            São Paulo - SP<br>
+            CEP 00000-000
+          </p>
+
+          <p class="mt-4 text-zinc-400">
+            +55 (11) 99999-9999<br>
+            contato@b1motors.com.br
+          </p>
+        </div>
+
+        <div>
+          <h3 class="text-xl font-semibold mb-4 text-primary">
+            Horário de Atendimento
+          </h3>
+
+          <p class="text-zinc-400 leading-relaxed">
+            Segunda a Sexta: 9h às 18h<br>
+            Sábado: 9h às 14h<br>
+            Domingo: Sob agendamento
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- MAPA / CTA -->
+<section class="bg-black py-16 text-center border-t border-zinc-800">
+  <h3 class="text-2xl md:text-3xl font-bold mb-6">
+    Atendimento personalizado e consultoria exclusiva.
+  </h3>
+
+  <a href="https://wa.me/5511999999999"
+     class="inline-block bg-primary rounded-2xl hover:bg-red-700 transition px-8 py-3 uppercase text-sm tracking-wider">
+     Falar no WhatsApp
+  </a>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-black border-t border-zinc-800 py-10 text-center text-zinc-500 text-sm">
+  © 2026 B1 Motors — Todos os direitos reservados.
+</footer>
+
+ <!-- SCRIPTS -->
+  <script src="assets/js/cards.js"></script>
+  <script src="assets/js/carro.js"></script>
+  <script src="assets/js/main.js"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const btn = document.getElementById('menu-btn');
+      const menu = document.getElementById('mobile-menu');
+
+      if (btn) {
+        btn.addEventListener('click', () => {
+          menu.classList.toggle('hidden');
+        });
+      }
+    });
+  </script>
+
+</body>
+</html>
