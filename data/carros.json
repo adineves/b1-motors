@@ -1,0 +1,11 @@
+[
+  {
+    "id": 1,
+    "nome": "Ford Mustang GT",
+    "ano": 2013,
+    "preco": 250000,
+    "km": 25000,
+    "cambio": "Automático",
+    "imagem": "https://images.unsplash.com/photo-1494905998402-395d579af36f"
+  }
+]
