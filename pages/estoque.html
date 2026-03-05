@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estoque - B1 Motors</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { primary: "#e10600" }
+        }
+      }
+    }
+  </script>
+
+  <!--FONTE-->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!--FAVICON-->
+  <link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/x-icon">
+</head>
+
+<body class="bg-black text-white font-[Montserrat]">
+
+
+<!--CABECALHO-->
+<header class="border-b border-zinc-800">
+
+  <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+
+    <img src="../assets/images/logo/b1-logo.png" alt="B1 Motors" class="h-10 w-auto">
+
+    <nav class="hidden md:flex space-x-8 text-sm uppercase tracking-wider">
+      <a href="../index.html" class="hover:text-primary transition">Home</a>
+      <a href="sobre.html" class="hover:text-primary transition">Sobre</a>
+      <a href="estoque.html" class="hover:text-primary transition">Estoque</a>
+      <a href="contato.html" class="hover:text-primary transition">Contato</a>
+    </nav>
+
+    <button id="menu-btn" class="md:hidden text-2xl">
+      ☰
+    </button>
+
+  </div>
+
+  <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 space-y-3 text-sm uppercase">
+    <a href="../index.html" class="block hover:text-primary">Home</a>
+    <a href="sobre.html" class="block hover:text-primary">Sobre</a>
+    <a href="estoque.html" class="block hover:text-primary">Estoque</a>
+    <a href="contato.html" class="block hover:text-primary">Contato</a>
+  </div>
+
+</header>
+
+
+<!--TITULO-->
+
+<section class="py-20 text-center">
+
+<h1 class="text-4xl font-bold mb-4">
+Nosso Estoque
+</h1>
+
+<p class="text-zinc-400">
+Confira todos os veículos disponíveis
+</p>
+
+</section>
+
+
+<!--GRID DE CARROS-->
+<section class="pb-24">
+  <div class="max-w-7xl mx-auto px-6">
+    <div id="estoque-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"></div>
+  </div>
+</section>
+
+  <!--FOOTER-->
+  <footer class="bg-black border-t border-zinc-800 py-10 text-center text-zinc-500 text-sm">
+    B1 Motors | CEP: 08530-000 | Ferraz de Vasconcelos - SP | Rua Santos Dumont, 7979 | CNPJ: 65.435.036/0001-43 <br><br>
+    Desenvolvido por 
+    <a
+    href="https://www.instagram.com/adi.neves/"
+    class="hover:text-white"
+    target="_blank">
+    Adler Neves
+    </a>
+  </footer>
+
+  <script type="module" src="../assets/js/estoque.js"></script>
+
+</body>
+</html>

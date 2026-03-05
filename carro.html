@@ -3,86 +3,87 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>B1 Motors</title>
+  <title>Carro - B1 Motors</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            primary: "#e10600"
-          }
-        }
-      }
-    }
+    tailwind.config = { theme: { extend: { colors: { primary: "#e10600" } } } }
   </script>
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="assets/icons/favicon.ico">
 </head>
 <body class="bg-black text-white">
-
-  <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home - B1 Motors</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            primary: "#e10600"
-          }
-        }
-      }
-    }
-  </script>
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
-</head>
-
-<body class="bg-black text-white font-sans">
-
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
 
 <!-- HEADER -->
 <header class="border-b border-zinc-800">
   <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
-    <img src="assets/images/logo/b1-logo.png" alt="B1 Motors" class="h-10 w-auto">
+    <img src="assets/images/logo/b1-logo.png" class="h-10">
     
     <nav class="hidden md:flex space-x-8 text-sm uppercase tracking-wider">
-      <a href="index.html" class="hover:text-primary transition">Home</a>
-      <a href="sobre.html" class="hover:text-primary transition">Sobre</a>
-      <a href="estoque.html" class="hover:text-primary transition">Estoque</a>
-      <a href="contato.html" class="hover:text-primary transition">Contato</a>
+      <a href="../index.html" class="hover:text-red-500">Home</a>
+      <a href="sobre.html" class="hover:text-red-500">Sobre</a>
+      <a href="estoque.html" class="hover:text-red-500">Estoque</a>
+      <a href="contato.html" class="hover:text-red-500">Contato</a>
     </nav>
-
-    <!-- Mobile Button -->
-    <button id="menu-btn" class="md:hidden text-2xl">
-      ☰
-    </button>
-  </div>
-
-  <!-- Mobile Menu -->
-  <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 space-y-3 text-sm uppercase">
-    <a href="#" class="block hover:text-primary">Home</a>
-    <a href="sobre.html" class="block hover:text-primary">Sobre</a>
-    <a href="estoque.html" class="block hover:text-primary">Estoque</a>
-    <a href="contato.html" class="block hover:text-primary">Contato</a>
   </div>
 </header>
 
-  <div id="carro-detalhe"></div>
+<div id="carro-detalhe"></div>
 
-  <script src="assets/js/carros.js"></script>
-  <script src="assets/js/detalhe.js"></script>
+<!-- CONTEUDO -->
+<section class="max-w-7xl mx-auto px-6 py-16">
+
+<!-- CARROSSEL -->
+<div class="relative mb-12">
+  <div class="overflow-hidden rounded-2xl">
+    <div id="galeria" class="flex transition-transform duration-500"></div>
+  </div>
+
+  <button id="prev" class="absolute left-4 top-1/2 -translate-y-1/2 bg-black/70 px-4 py-2 rounded-full"></button>
+  <button id="next" class="absolute right-4 top-1/2 -translate-y-1/2 bg-black/70 px-4 py-2 rounded-full"></button>
+</div>
+
+<!-- NOME -->
+<h1 id="nome" class="text-4xl md:text-5xl font-semibold text-center mb-10"></h1>
+
+<!-- INFO RAPIDA -->
+<div id="info-grid" class="grid grid-cols-2 md:grid-cols-3 gap-6 text-center mb-14 text-sm md:text-base"></div>
+
+<!-- FICHA TECNICA -->
+<div class="bg-zinc-900 border border-zinc-800 rounded-2xl p-10 max-w-4xl mx-auto">
+  <h2 class="text-3xl font-semibold text-center mb-10 tracking-wide">
+    FICHA TÉCNICA
+  </h2>
+
+  <div id="ficha" class="grid md:grid-cols-2 gap-y-6 gap-x-12 text-sm md:text-base"></div>
+    <hr class="border-zinc-700 my-8">
+    
+    <p id="descricao" class="text-gray-400 leading-relaxed text-center max-w-2xl mx-auto"></p>
+  </div>
+
+<!-- CTA -->
+<div class="text-center mt-12">
+  <p class="mb-4 text-lg">Gostou? Fale conosco!</p>
+
+  <a href="https://wa.me/5511990091610" id="whatsapp" target="_blank" class="bg-green-500 px-6 py-3 rounded-xl text-black font-semibold hover:bg-green-400 transition">
+    WhatsApp
+  </a>
+</div>
+</section>
+
+  <!--FOOTER-->
+  <footer class="bg-black border-t border-zinc-800 py-10 text-center text-zinc-500 text-sm">
+    B1 Motors | CEP: 08530-000 | Ferraz de Vasconcelos - SP | Rua Santos Dumont, 7979 | CNPJ: 65.435.036/0001-43 <br><br>
+    Desenvolvido por 
+    <a
+    href="https://www.instagram.com/adi.neves/"
+    class="hover:text-white"
+    target="_blank">
+    Adler Neves
+    </a>
+  </footer>
+
+  <div id="carro-detalhe"></div>
+  <script type="module" src="assets/js/carros-detalhes.js"></script>
 
 </body>
 </html>

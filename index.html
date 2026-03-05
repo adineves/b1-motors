@@ -6,178 +6,119 @@
   <title>Home - B1 Motors</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            primary: "#e10600"
-          }
-        }
-      }
-    }
+    tailwind.config = { theme: { extend: { colors: { primary: "#e10600" } } } }
   </script>
+
+  <!--FONTE-->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!--FAVICON-->
   <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
 </head>
-<body class="bg-black text-white font-sans">
-
-  <!-- HEADER -->
+<body class="bg-black text-white font-[Montserrat]">
+  <!--CABECALHO-->
   <header class="border-b border-zinc-800">
     <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
       <img src="assets/images/logo/b1-logo.png" alt="B1 Motors" class="h-10 w-auto">
+
       <nav class="hidden md:flex space-x-8 text-sm uppercase tracking-wider">
-        <a href="#" class="hover:text-primary transition">Home</a>
-        <a href="sobre.html" class="hover:text-primary transition">Sobre</a>
-        <a href="estoque.html" class="hover:text-primary transition">Estoque</a>
-        <a href="contato.html" class="hover:text-primary transition">Contato</a>
+        <a href="index.html" class="hover:text-primary transition">Home</a>
+        <a href="/pages/sobre.html" class="hover:text-primary transition">Sobre</a>
+        <a href="pages/estoque.html" class="hover:text-primary transition">Estoque</a>
+        <a href="pages/contato.html" class="hover:text-primary transition">Contato</a>
       </nav>
-      <button id="menu-btn" class="md:hidden text-2xl">☰</button>
+
+      <button id="menu-btn" class="md:hidden text-2xl">
+        ☰
+      </button>
     </div>
+
     <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 space-y-3 text-sm uppercase">
-      <a href="#" class="block hover:text-primary">Home</a>
-      <a href="sobre.html" class="block hover:text-primary">Sobre</a>
-      <a href="estoque.html" class="block hover:text-primary">Estoque</a>
-      <a href="contato.html" class="block hover:text-primary">Contato</a>
+      <a href="index.html" class="block hover:text-primary">Home</a>
+      <a href="pages/sobre.html" class="block hover:text-primary">Sobre</a>
+      <a href="pages/estoque.html" class="block hover:text-primary">Estoque</a>
+      <a href="pages/contato.html" class="block hover:text-primary">Contato</a>
     </div>
   </header>
 
-  <!-- HERO -->
+  <!--HERO-->
   <section class="relative h-[90vh] flex items-center justify-center text-center">
     <img src="assets/images/backgrounds/index.png" class="absolute inset-0 w-full h-full object-cover opacity-40">
+
     <div class="relative z-10 px-6">
-      <h2 class="text-4xl md:text-6xl font-bold mb-6">
-        Performance. Exclusividade. <span class="text-primary">Confiança.</span>
-      </h2>
-      <a href="estoque.html" class="bg-primary px-8 py-3 uppercase text-sm rounded-2xl tracking-wider hover:bg-red-800 transition">
-        Ver Estoque
-      </a>
+      <h2 class="text-4xl md:text-6xl font-bold mb-6">Performance. Exclusividade. <span class="text-primary">Confiança.</span></h2>
+
+      <a href="pages/estoque.html" class="bg-primary px-8 py-3 uppercase text-sm rounded-2xl tracking-wider hover:bg-red-800 transition">Ver Estoque</a>
     </div>
   </section>
 
-  <!-- DESTAQUES -->
-  <section id="estoque" class="py-24">
+  <!--DESTAQUES-->
+  <section class="py-24">
     <div class="max-w-7xl mx-auto px-6">
-      <h3 class="text-3xl font-bold text-center mb-16">Destaques</h3>
+      <h3 class="text-3xl font-bold text-center mb-16">DESTAQUES</h3>
 
       <div class="relative">
-
-        <!-- Botões -->
         <button id="prev" class="absolute -left-5 top-1/2 -translate-y-1/2 z-20 bg-black/70 text-white p-3 rounded-full hover:bg-black transition">&#10094;</button>
-        <button id="next" class="absolute -right-5 top-1/2 -translate-y-1/2 z-20 bg-black/70 text-white p-3 rounded-full hover:bg-black transition">&#10095;</button>
+        <button id="next" class="absolute -right-5 top-1/2 -translate-y-1/2 z-20 bg-black/70 text-white p-3 rounded-full hover:bg-black transition">&#10095;
+        </button>
 
-        <!-- Container com overflow -->
         <div class="overflow-hidden">
-          <div id="carrossel" class="flex gap-10 transition-transform duration-500 ease-in-out">
-            <!-- JS irá gerar os cards -->
-          </div>
+
+          <div id="carrossel" class="flex gap-10 transition-transform duration-500 ease-in-out"></div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Localização -->
-  <div class="py-24 text-center">
+  <!--LOCALIZACAO-->
+  <section class="py-24 text-center">
     <h2 class="text-4xl font-bold mb-8">Nossa Localização</h2>
     <p class="text-gray-400 mb-6">Rua Santos Dumont, 797 - Ferraz de Vasconcelos - SP, CEP: 08530-000</p>
-    <div class="w-full h-80">
-      <iframe class="w-full h-full rounded" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.8213862057364!2d-46.369619824670465!3d-23.538925778815273!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce652dd6e5a435%3A0x4bd405e05c91fcb9!2sR.%20Santos%20Dumont%2C%20789%20-%20Vila%20Maria%20Rosa%2C%20Ferraz%20de%20Vasconcelos%20-%20SP%2C%2008530-000!5e0!3m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-  </div>
 
-  <!-- CONTATO -->
-  <section id="contato" class="py-24 bg-zinc-950">
+    <div class="w-full h-80 max-w-6xl mx-auto">
+      <iframe class="w-full h-full rounded" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.8213862057364!2d-46.369619824670465!3d-23.538925778815273!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce652dd6e5a435%3A0x4bd405e05c91fcb9!2sR.%20Santos%20Dumont%2C%20789%20-%20Vila%20Maria%20Rosa%2C%20Ferraz%20de%20Vasconcelos%20-%20SP%2C%2008530-000!5e0!3m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </section>
+
+  <!--CONTATO-->
+  <section class="py-24 bg-zinc-950">
     <div class="max-w-xl mx-auto px-6 text-center">
       <h3 class="text-3xl font-bold mb-10">Fale Conosco</h3>
+
       <form class="space-y-5">
-        <input type="text" placeholder="Nome" class="w-full p-3 bg-black rounded-2xl border border-zinc-700 focus:border-primary outline-none">
-        <input type="email" placeholder="Email" class="w-full p-3 bg-black rounded-2xl border border-zinc-700 focus:border-primary outline-none">
-        <textarea rows="5" placeholder="Mensagem" class="w-full p-3 bg-black rounded-2xl border border-zinc-700 focus:border-primary outline-none"></textarea>
-        <button class="w-full bg-primary py-3 rounded-2xl uppercase text-sm tracking-wider hover:bg-red-800 transition">
-          Enviar
-        </button>
+        <input 
+        type="text"
+        placeholder="Nome"
+        class="w-full p-3 bg-black rounded-2xl border border-zinc-700 focus:border-primary outline-none">
+
+        <input 
+        type="email"
+        placeholder="Email"
+        class="w-full p-3 bg-black rounded-2xl border border-zinc-700 focus:border-primary outline-none">
+
+        <textarea 
+        rows="5" 
+        placeholder="Mensagem" 
+        class="w-full p-3 bg-black rounded-2xl border border-zinc-700 focus:border-primary outline-none"></textarea>
+
+        <button class="w-full bg-primary py-3 rounded-2xl uppercase text-sm tracking-wider hover:bg-red-800 transition">Enviar</button>
       </form>
     </div>
   </section>
 
-  <!-- FOOTER -->
+  <!--FOOTER-->
   <footer class="bg-black border-t border-zinc-800 py-10 text-center text-zinc-500 text-sm">
-    © 2026 B1 Motors - Todos os direitos reservados | Desenvolvido por <a href="http://www.instagram.com/adi.neves/">Adler Neves</a>
+    B1 Motors | CEP: 08530-000 | Ferraz de Vasconcelos - SP | Rua Santos Dumont, 7979 | CNPJ: 65.435.036/0001-43 <br><br>
+    Desenvolvido por 
+    <a
+    href="https://www.instagram.com/adi.neves/"
+    class="hover:text-white"
+    target="_blank">
+    Adler Neves
+    </a>
   </footer>
 
-  <!-- SCRIPTS -->
-  <script>
-    // Menu mobile
-    document.addEventListener("DOMContentLoaded", function () {
-      const btn = document.getElementById('menu-btn');
-      const menu = document.getElementById('mobile-menu');
-      if (btn) {
-        btn.addEventListener('click', () => {
-          menu.classList.toggle('hidden');
-        });
-      }
-    });
-
-    // Carros - dados
-    const carros = [
-      { nome: "Hyundai Creta 1.6 Flex", preco: "R$ 92.900,00", ano: "2020/2021", km: "65.000km", cambio: "Automático", img: "assets/images/carros/hyundai-creta/hyundai-creta1.jpg" },
-      { nome: "Hyundai HB20 1.0 Flex", preco: "R$ 42.900,00", ano: "2013/2013", km: "171.000km", cambio: "Manual", img: "assets/images/carros/hyundai-hb20/hyundai-hb201.jpg" },
-      { nome: "Toyota Corolla 2.0 VVT-IE Flex", preco: "R$ 124.900,00", ano: "2023/2024", km: "14.000km", cambio: "Automático", img: "assets/images/carros/toyota-corolla/toyota-corolla1.png" },
-      { nome: "BMW M4 - F82", preco: "R$ 450.000,00", ano: "2016", km: "15.000km", cambio: "Automático", img: "assets/images/carros/bmw-m4/bmw-m41.jpg" },
-      { nome: "Porsche 911", preco: "R$ 850.000,00", ano: "2023", km: "5.000km", cambio: "Automático", img: "assets/images/carros/porsche-911/porsche911.jpg" }
-    ];
-
-    const carrossel = document.getElementById("carrossel");
-
-    // Gera os cards
-    carros.forEach(carro => {
-      const card = document.createElement("div");
-      card.className = "flex-shrink-0 min-w-[100%] md:min-w-[48%] lg:min-w-[31%]";
-      card.innerHTML = `
-        <div class="relative rounded-2xl overflow-hidden group cursor-pointer transition duration-500 hover:scale-[1.03]">
-          <img src="${carro.img}" class="w-full h-72 object-cover object-center transition duration-700 group-hover:scale-110">
-          <div class="absolute bottom-0 left-0 w-full px-4 py-3 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-black/40 backdrop-blur-sm rounded-b-2xl">
-            <div class="flex justify-between items-center mb-2">
-              <h4 class="text-lg font-semibold">${carro.nome}</h4>
-              <span class="font-bold text-red-500 group-hover:text-red-600 transition duration-300">${carro.preco}</span>
-            </div>
-            <div class="text-sm text-zinc-200">
-              ${carro.ano} • ${carro.km} • ${carro.cambio}
-            </div>
-          </div>
-        </div>
-      `;
-      carrossel.appendChild(card);
-    });
-
-    // Função responsiva
-    function getCardsPerView() {
-      if (window.innerWidth >= 1024) return 3;
-      if (window.innerWidth >= 768) return 2;
-      return 1;
-    }
-
-    let index = 0;
-    const prevBtn = document.getElementById("prev");
-    const nextBtn = document.getElementById("next");
-
-    function updateCarrossel() {
-      const width = carrossel.querySelector("div").offsetWidth + 40; // card + gap
-      carrossel.style.transform = `translateX(-${index * width}px)`;
-    }
-
-    nextBtn.addEventListener("click", () => {
-      const cardsPerView = getCardsPerView();
-      const maxIndex = Math.max(0, carros.length - cardsPerView);
-      index = Math.min(index + 1, maxIndex);
-      updateCarrossel();
-    });
-
-    prevBtn.addEventListener("click", () => {
-      index = Math.max(index - 1, 0);
-      updateCarrossel();
-    });
-
-    window.addEventListener("resize", updateCarrossel);
-  </script>
+  <!--JS-->
+  <script type="module" src="assets/js/index.js"></script>
 </body>
 </html>
