@@ -4,6 +4,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sobre - B1 Motors</title>
+
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+
+  fbq('init', '1803390290353356');
+  fbq('track', 'PageView');
+  </script>
+
+  <noscript>
+  <img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1803390290353356&ev=PageView&noscript=1"/>
+  </noscript>
+  <!-- End Meta Pixel Code -->
+
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -29,10 +51,10 @@
 <!-- HEADER -->
 <header class="border-b border-zinc-800">
   <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
-    <img src="assets/images/logo/b1-logo.png" alt="B1 Motors" class="h-10 w-auto">
+    <img src="../assets/images/logo/b1-logo.png" alt="B1 Motors" class="h-10 w-auto">
 
     <nav class="hidden md:flex space-x-8 text-sm uppercase tracking-wider">
-      <a href="index.html" class="hover:text-primary transition">Home</a>
+      <a href="../index.html" class="hover:text-primary transition">Home</a>
       <a href="sobre.html" class="text-primary">Sobre</a>
       <a href="estoque.html" class="hover:text-primary transition">Estoque</a>
       <a href="contato.html" class="hover:text-primary transition">Contato</a>
@@ -48,7 +70,7 @@
 
   <!-- Mobile Menu -->
   <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 space-y-3 text-sm uppercase">
-    <a href="#" class="block hover:text-primary">Home</a>
+    <a href="../index.html" class="block hover:text-primary">Home</a>
     <a href="sobre.html" class="block hover:text-primary">Sobre</a>
     <a href="estoque.html" class="block hover:text-primary">Estoque</a>
     <a href="contato.html" class="block hover:text-primary">Contato</a>
@@ -157,10 +179,17 @@
   </a>
 </section>
 
-<!-- FOOTER -->
-<footer class="bg-black border-t border-zinc-800 py-10 text-center text-zinc-500 text-sm">
-  © 2026 B1 Motors — Todos os direitos reservados.
-</footer>
+  <!--FOOTER-->
+  <footer class="bg-black border-t border-zinc-800 py-10 text-center text-zinc-500 text-sm">
+    B1 Motors | CEP: 08530-000 | Ferraz de Vasconcelos - SP | Rua Santos Dumont, 7979 | CNPJ: 65.435.036/0001-43 <br><br>
+    Desenvolvido por 
+    <a
+    href="https://www.instagram.com/adi.neves/"
+    class="hover:text-white"
+    target="_blank">
+    Adler Neves
+    </a>
+  </footer>
 
  <!-- SCRIPTS -->
   <script src="assets/js/cards.js"></script>
